@@ -91,7 +91,22 @@
             <a href="/pages/admin/new_article.html" class="button">New Article</a>
         </div>
 	<ul class="article_list">
-        	</ul>
+	        <li  class="article">
+                    <h2><a href="/pages/articles/1.json">first article</a></h2>
+                    <div class="button">
+                        <form action="edit/1.json" method="get" style="display:inline;">
+                            <button type="submit" class="delete-button">
+                                Edit
+                            </button>
+                        </form>
+                        <form action="delete/1.json" method="post" style="display:inline;">
+                            <button type="submit" class="delete-button">
+                                Delete
+                            </button>
+                        </form>
+                    </div>
+                </li>
+            	</ul>
     </div>
 </body>
 </html>
