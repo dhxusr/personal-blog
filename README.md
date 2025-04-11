@@ -21,33 +21,41 @@ This is a **personal blog** project that allows users to **create**, **edit**, a
 - Clean article layout for easy reading.
 
 ## Structure of the project
-personal-blog 
-┣ server.py 
-┣ README.md 
-┣ backend 
-┃ ┣ my_handler.py 
-┃ ┗ sub_functions.py 
-┣ pages 
-┃ ┣ index.html 
-┃ ┣ showsrc.html 
-┃ ┗ admin 
-┃ ┃ ┣ index.html 
-┃ ┃ ┣ edit.html 
-┃ ┃ ┗ new_article.html 
-┣ articles
+ personal-blog 
+ ┣ server.py 
+ ┣ README.md 
+ ┣ backend 
+ ┃ ┣ my_handler.py 
+ ┃ ┗ sub_functions.py 
+ ┣ pages 
+ ┃ ┣ index.html 
+ ┃ ┣ showsrc.html 
+ ┃ ┗ admin 
+ ┃ ┃ ┣ index.html 
+ ┃ ┃ ┣ edit.html 
+ ┃ ┃ ┗ new_article.html 
+ ┣ articles
 
 ## Getting Started
 Clone the repository
-`git clone https://github.com/dhxusr/personal-blog.git`
+```
+git clone https://github.com/dhxusr/personal-blog.git
+```
 
 move into the new repository
-`cd personal-blog`
+```
+cd personal-blog
+```
 
 run the server
-`python server.py`
+```
+python server.py
+```
 
 now you can navigate with
-`http://127.0.0.1:8000/`
+```
+http://127.0.0.1:8000/
+```
 
 That's it. enjoy it!
 
@@ -55,5 +63,5 @@ That's it. enjoy it!
 - This project is ideal as a personal writing space or a minimalist publishing platform.
 - You can expand it with features like tags, search, or even comments.
 
-== This project idea is from roadmap.sh ==
+## This project idea is from roadmap.sh
 https://roadmap.sh/projects/personal-blog
