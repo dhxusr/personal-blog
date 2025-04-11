@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Article</title>
+    <link rel="icon" href="data:,">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc;
+            margin: 0;
+            padding: 0;
+            overflow-y: auto; /* Línea agregada para permitir scroll */
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .header-section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background: #e0d5b5;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .header-section a {
+            padding: 10px 20px;
+            background: #444;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .header-section a:hover {
+            background: #666;
+        }
+        .form-container {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .form-container label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .form-container input, .form-container textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: block;
+        }
+        .form-container textarea {
+            height: 200px;
+        }
+        .publish-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .publish-button:hover {
+            background: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Article</h1>
+        <div class="header-section">
+            <a href="/pages/admin/index.html" class="home-button">Home</a>
+        </div>
+        <div class="form-container">
+            <form action="create" method="post">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="content">Content</label>
+                <textarea id="content" name="content" required></textarea>
+                <button type="submit" class="publish-button">
+                     Publish
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

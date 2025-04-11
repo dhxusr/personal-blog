@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #e0d5b5;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .header-section a {
+            padding: 10px 20px;
+            background: #444;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .header-section a:hover {
+            background: #666;
+        }
+        .articles {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .article {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+	.article_list {
+	    list-style: none;
+	    padding: 0;
+	    margin-top: 0;
+	}
+        .button {
+            display: flex;
+            gap: 10px;
+        }
+        .button a {
+            padding: 5px 10px;
+            background: #444;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button a:hover {
+            background: #666;
+        }
+	.delete-button {
+	    padding: 5px 10px;
+	    background: #444;
+	    color: white;
+	    text-decoration: none;
+	    border-radius: 5px;
+	}
+	.delete-button:hover {
+	    background: #666;
+	}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Blog</h1>
+        <div class="header-section">
+            <a href="/pages/admin/index.html" class="button">Login</a>
+        </div>
+        <div class="articles">
+    	    <ul class="article_list">
+        	    </ul>
+	</div>
+    </div>
+</body>
+</html>
